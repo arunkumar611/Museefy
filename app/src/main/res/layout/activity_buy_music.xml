@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_buy_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    tools:context="com.example.arun.museefy.NowPlaying">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_edit_frame"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#263238"
+        app:queryBackground="@color/colorAccent">
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#546E7A" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout style="@style/activitySelectorBar">
+
+        <LinearLayout style="@style/activitySelector">
+
+            <TextView
+                android:id="@+id/home"
+                style="@style/activity"
+                android:text="Home" />
+
+            <View style="@style/activitySelectionNo" />
+        </LinearLayout>
+
+        <View style="@style/activitySpace" />
+
+        <LinearLayout style="@style/activitySelector">
+
+            <TextView
+                android:id="@+id/myMusic"
+                style="@style/activity"
+                android:text="My Music" />
+
+            <View style="@style/activitySelectionNo" />
+        </LinearLayout>
+
+        <View style="@style/activitySpace" />
+
+        <LinearLayout style="@style/activitySelector">
+
+            <TextView
+                android:id="@+id/discover"
+                style="@style/activity"
+                android:text="Discover" />
+
+            <View style="@style/activitySelectionNo" />
+        </LinearLayout>
+
+        <View style="@style/activitySpace" />
+
+        <LinearLayout style="@style/activitySelector">
+
+            <TextView
+                android:id="@+id/buyMusic"
+                style="@style/activity"
+                android:text="Buy Music" />
+
+            <View style="@style/activitySelectionYes" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/activityText"
+        android:text="This is the 'Buy Music' Activity of the App. This will provide option to buy music" />
+
+    <TextView
+        style="@style/activityTechnicalText"
+        android:text="Implementation next steps:\n
+        1) Find a library that can process payments\n
+        2) Users should be able to search in-app the songs available for purchase" />
+
+</LinearLayout>
